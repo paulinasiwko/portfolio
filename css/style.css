@@ -103,7 +103,7 @@ header nav a:hover {
 }
 
 .hero-banner {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url("../images/02-portfolio-3.jpg");
   height: 200px;
   position: relative;
   display: flex;
@@ -158,28 +158,28 @@ header nav a:hover {
 
  .prj-1-grid {
   height: 450px;
-  background-image: url(../images/kubi-producent-mebli.png);
+  background-image: url("../images/kubi-producent-mebli.png");
   background-size: 100% 100%;
   grid-area: prj-1;
  }
 
  .prj-2-grid {
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url("../images/02-portfolio-4.jpg");
   grid-area: prj-2;
  }
 
  .prj-3-grid {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url("../images/02-portfolio-2.jpg");
   grid-area: prj-3;
  }
 
  .prj-4-grid {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url("../images/02-portfolio-3.jpg");
   grid-area: prj-4;
  }
 
  .prj-5-grid {
-  background-image: url(../images/02-hero-bg.jpg);
+  background-image: url("../images/02-hero-bg.jpg");
   grid-area: prj-5;
  }
 
