@@ -25,6 +25,7 @@ p {
 :root {
   --dark-motive: rgb(42, 42, 42);
   --mint: rgb(99, 177, 177);
+  --white: white;
 }
 
 /* Selectors */
@@ -46,7 +47,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: white;
+  color: var(--white);
 }
 
 /* ID Selectors */
@@ -55,7 +56,6 @@ header nav a:hover {
   background-color: var(--dark-motive);
   color: var(--mint);
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -75,6 +75,18 @@ header nav a:hover {
   ;
 }
 
+#work a {
+  color: var(--dark-motive);
+  border: 4px solid var(--mint);
+  position: relative;
+  margin: 10px 0 10px 50px;
+}
+
+#work a:hover {
+  color: var(--white);
+  filter: brightness(1.1);
+}
+
 #contact {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -85,7 +97,6 @@ header nav a:hover {
 
 .navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin-right: 50px;
@@ -95,9 +106,11 @@ header nav a:hover {
   background-image: url(/images/02-portfolio-3.jpg);
   height: 200px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.hero-banner div {
+.hero-banner h2 {
   background-color: var(--dark-motive);
   color: var(--mint);
   position: absolute;
@@ -105,6 +118,12 @@ header nav a:hover {
   right: 0;
   padding: 5px 10px;
   margin: 0 60px 30px 0;
+}
+
+.hero-banner img {
+  margin: 10px 0 10px 45px;
+  border: 4px solid var(--mint);
+  border-radius: 10px;
 }
 
 .page-wrapper {
@@ -138,13 +157,14 @@ header nav a:hover {
  }
 
  .prj-1-grid {
-  background-image: url(/images/02-portfolio-4.jpg);
-  grid-area: prj-1;
   height: 450px;
+  background-image: url(/images/kubi-producent-mebli.png);
+  background-size: 100% 100%;
+  grid-area: prj-1;
  }
 
  .prj-2-grid {
-  background-image: url(/images/02-portfolio-1.jpg);
+  background-image: url(/images/02-portfolio-4.jpg);
   grid-area: prj-2;
  }
 
@@ -161,25 +181,6 @@ header nav a:hover {
  .prj-5-grid {
   background-image: url(/images/02-hero-bg.jpg);
   grid-area: prj-5;
- }
-
- .prj-1-grid,
- .prj-2-grid,
- .prj-3-grid,
- .prj-4-grid,
- .prj-5-grid {
-  border: 4px solid var(--mint);
-  position: relative;
-  margin: 10px 0 10px 50px;
- }
-
- .prj-1-grid:hover,
- .prj-2-grid:hover,
- .prj-3-grid:hover,
- .prj-4-grid:hover,
- .prj-5-grid:hover {
-  color: white;
-  filter: brightness(1.1);
  }
 
  .single-prj-description {
@@ -202,7 +203,6 @@ header nav a:hover {
 
  .contact-details {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
  }
 
@@ -215,3 +215,100 @@ header nav a:hover {
  .contact-details a:hover {
   color: var(--mint);
  } 
+
+
+ @media only screen and (max-width: 1000px) {
+  .page-section h2 {
+    color: var(--dark-motive);
+    font-size: 35px;
+    text-align: right;
+    border-right: 4px solid var(--dark-motive); 
+    padding-right: 20px;
+   }
+ }
+
+ @media only screen and (max-width: 800px) {
+
+  /* Selectors */
+
+  header h1 {
+    background-color: var(--mint);
+    color: var(--dark-motive);
+    padding: 0 20px;
+    margin: 10px auto 10px 0;
+  }
+
+  header nav a {
+    font-size: 18px;
+    margin: 10px 15px;
+    text-decoration-thickness: 1px;
+  }
+
+  /* ID selectors */
+
+  #header {
+    background-color: var(--dark-motive);
+    color: var(--mint);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #work {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.15fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "work-grid"
+    "prj-1"
+    "prj-2"
+    "prj-3"
+    "prj-4"
+    "prj-5"
+    ;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   }
+
+  /* Class selectors */
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    margin-bottom: 15px;
+  }
+
+  .hero-banner img {
+    margin: 10px;
+  }
+
+  .hero-banner h2 {
+    position: relative;
+    padding: 5px 10px;
+    margin: auto 10px;
+  }
+
+  .about-me-description {
+    margin: auto;
+   }
+
+  .prj-1-grid {
+    background-size: cover;
+   }
+
+   .contact-details a {
+    margin: 20px;
+   }
+   
+ }
