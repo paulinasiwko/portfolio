@@ -32,7 +32,7 @@ p {
 header h1 {
   background-color: var(--mint);
   color: var(--dark-motive);
-  margin: 10px;
+  margin: 10px 0;
   padding: 0 10px 0 60px;
 }
 
@@ -66,7 +66,7 @@ header nav h2 {
 #work {
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
   grid-template-areas: 
   "work-grid prj-1 prj-1"
   "work-grid prj-2 prj-3"
@@ -74,23 +74,10 @@ header nav h2 {
   ;
 }
 
-#work div {
-  margin: 10px 0 10px 50px;
-}
-
 #contact {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 80%;
   align-items: center;
-}
-
-#contact p {
-  color: var(--dark-motive);
-  font-size: 20px;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 8px;
 }
 
 /* Class Selectors */
@@ -167,18 +154,55 @@ header nav h2 {
   grid-area: prj-5;
  }
 
- .prj-all {
+ .prj-1-grid,
+ .prj-2-grid,
+ .prj-3-grid,
+ .prj-4-grid,
+ .prj-5-grid {
   border: 4px solid var(--mint);
   position: relative;
+  margin: 10px 0 10px 50px;
  }
 
- .prj-all p {
+ .prj-1-grid:hover,
+ .prj-2-grid:hover,
+ .prj-3-grid:hover,
+ .prj-4-grid:hover,
+ .prj-5-grid:hover {
+  color: white;
+  filter: brightness(1.1);
+ }
+
+ .single-prj-description {
   background-color: var(--mint);
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 5px 10px;
   margin-bottom: 20px;
+ }
+
+ .single-prj-description h3 {
   font-size: 22px;
+ }
+
+ .single-prj-description p {
+  font-size: 14px;
+  text-align: center;
+ }
+
+ .contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
+
+ .contact-details p {
+  color: var(--dark-motive);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
  }
 
