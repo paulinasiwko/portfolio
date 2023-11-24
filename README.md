@@ -7,10 +7,13 @@ This project serves as my portfolio webpage, showcasing my various projects. The
 N/A
 
 ## Usage
-This HTML file contains elements of semantic HTML. Elements follow a logical structure independent of styling and positioning. All image elements contain accessible **alt** attribute.
-The CSS file contains **media queries** to make this webpage responsive.
+This HTML file incorporates semantic HTML elements, adhering to a logical structure that remains independent of styling and positioning. Additionally, all image elements within the file include an accessible **alt** attribute, contributing to a more inclusive user experience.
+
+The accompanying CSS file is equipped with **media queries** to enhance the webpage's responsiveness, ensuring optimal viewing across various devices.
 
 The [URL] (https://paulinasiwko.github.io/portfolio/) of deployed application.
+
+![A screenshot of the deployed application](./images/portfolio-screenshot.png)
 
 ## Credits
 N/A
