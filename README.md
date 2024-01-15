@@ -11,9 +11,9 @@ This HTML file incorporates semantic HTML elements, adhering to a logical struct
 
 The accompanying CSS file is equipped with **media queries** to enhance the webpage's responsiveness, ensuring optimal viewing across various devices.
 
-The [URL] (https://paulinasiwko.github.io/portfolio/) of deployed application.
+The [URL](https://paulinasiwko.github.io/portfolio/) of deployed application.
 
-![A screenshot of the deployed application](./images/portfolio-screenshot.png)
+![A screenshot of the deployed application](./assets/images/portfolio-screenshot.png)
 
 ## Credits
 N/A
